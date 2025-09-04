@@ -3,7 +3,7 @@ layout: default
 permalink: /
 ---
 
-<div class="hero-section" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center;">
+<div class="hero-section" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #027EFF 0%, #4102FF 100%); color: white; text-align: center;">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -58,7 +58,7 @@ permalink: /
 </div>
 
 <!-- Featured Projects Section -->
-<div class="featured-projects py-5" style="background: #f8f9fa;">
+<div class="featured-projects py-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center mb-5">
@@ -166,7 +166,7 @@ permalink: /
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 6px 20px rgba(2, 126, 255, 0.3);
 }
 
 .card {
@@ -175,7 +175,7 @@ permalink: /
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 25px rgba(2, 126, 255, 0.2);
 }
 
 .hero-section {
