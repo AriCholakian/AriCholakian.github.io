@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }}</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: #0d1117;
+      color: #f0f6fc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    header p {
+      font-size: 1.1rem;
+      color: #8b949e;
+    }
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #58a6ff;
+      margin: 1.5rem 0;
+    }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #58a6ff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+    .socials a {
+      margin: 0 0.5rem;
+      color: #f0f6fc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile-pic">
+      <img src="{{ site.baseurl }}/assets/img/profile.jpg" alt="{{ site.title }}">
+    </div>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+  <nav>
+    <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+    <a href="{{ '/blog.html' | relative_url }}">Blog</a>
+    <a href="{{ '/about.html' | relative_url }}">About</a>
+    <a href="mailto:{{ site.email }}">Contact</a>
+  </nav>
+
+  <footer>
+    <div class="socials">
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>
+    </div>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>
