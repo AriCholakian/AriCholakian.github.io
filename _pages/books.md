@@ -7,8 +7,8 @@ nav_order: 3
 collection: books
 ---
 
-> What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
+> Science fiction properly conceived, like all serious fiction, however funny, is a way of trying to describe what is in fact going on, what people actually do and feel, how people relate to everything else in this vast sack, this belly of the universe, this womb of things to be and tomb of things that were, this unending story.
 >
-> -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
+> -- Ursula K. Le Guin, The Carrier Bag Theory of Fiction (1986)
 
 ## Books that I am reading, have read, or will read

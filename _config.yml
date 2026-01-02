@@ -7,7 +7,7 @@ first_name: Ari
 middle_name: 
 last_name: Cholakian
 contact_note: >
-  Phone: +1 (778) 829-4303. I am best reached through email!
+  Phone: +1 (778) 829-4303. I am best contacted through email!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Ari Cholakian's engineering portfolio.
 footer_text: >
@@ -47,13 +47,13 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
 
 # Dimensions
-max_width: 930px
+max_width: 1000px
 
 # TODO: add layout settings (single page vs. multi-page)
 

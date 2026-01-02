@@ -412,7 +412,9 @@ ul.task-list input[type="checkbox"] {
 // Social (bottom)
 
 .social {
-  text-align: left;
+  text-align: center;
+  margin-top: 4rem; // Increase from current value
+  padding-top: 2rem;
 
   .contact-icons {
     font-size: 4rem;
