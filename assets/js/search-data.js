@@ -52,7 +52,147 @@ ninja.data = [{
             window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
           
         },
-      },{id: "books-the-godfather",
+      },{id: "books-a-fire-upon-the-deep",
+          title: 'A Fire upon the Deep',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/A_Fire_upon_the_Deep/";
+            },},{id: "books-consider-phlebas",
+          title: 'Consider Phlebas',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Consider_Phlebas/";
+            },},{id: "books-dune-messiah",
+          title: 'Dune Messiah',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Dune_Messiah/";
+            },},{id: "books-ender-39-s-game",
+          title: 'Ender&amp;#39;s Game',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Enders_Game/";
+            },},{id: "books-fahrenheit-451",
+          title: 'Fahrenheit 451',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Fahrenheit_451/";
+            },},{id: "books-flowers-for-algernon",
+          title: 'Flowers for Algernon',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Flowers_for_Algernon/";
+            },},{id: "books-gateway",
+          title: 'Gateway',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Gateway/";
+            },},{id: "books-hyperion",
+          title: 'Hyperion',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Hyperion/";
+            },},{id: "books-leviathan-wakes",
+          title: 'Leviathan Wakes',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Leviathan_Wakes/";
+            },},{id: "books-nineteen-eighty-four",
+          title: 'Nineteen Eighty-Four',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Nineteen_Eighty-Four/";
+            },},{id: "books-parable-of-the-sower",
+          title: 'Parable of the Sower',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Parable_of_the_sower/";
+            },},{id: "books-project-hail-mary",
+          title: 'Project Hail Mary',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Project_Hail_Mary/";
+            },},{id: "books-rendezvous-with-rama",
+          title: 'Rendezvous with Rama',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Rendezvous_with_Rama/";
+            },},{id: "books-ringworld",
+          title: 'Ringworld',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/Ringworld/";
+            },},{id: "books-the-dispossessed",
+          title: 'The Dispossessed',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Dispossessed/";
+            },},{id: "books-dune",
+          title: 'Dune',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Dune_Encyclopedia/";
+            },},{id: "books-the-fall-of-hyperion",
+          title: 'The Fall of Hyperion',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Fall_of_Hyperion/";
+            },},{id: "books-the-forever-war",
+          title: 'The Forever War',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Forever_War/";
+            },},{id: "books-the-hitch-hiker-39-s-guide-to-the-galaxy",
+          title: 'The Hitch Hiker&amp;#39;s Guide to the Galaxy',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Hitch_Hikers_Guide_to_the_Galaxy/";
+            },},{id: "books-the-lathe-of-heaven",
+          title: 'The Lathe of Heaven',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Lathe_of_Heaven/";
+            },},{id: "books-the-left-hand-of-darkness",
+          title: 'The Left Hand of Darkness',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Left_Hand_of_Darkness/";
+            },},{id: "books-the-lord-of-the-rings",
+          title: 'The Lord of the Rings',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Lord_of_the_Rings/";
+            },},{id: "books-the-martian",
+          title: 'The Martian',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Martian/";
+            },},{id: "books-the-stars-my-destination",
+          title: 'The Stars My Destination',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Stars_My_Destination/";
+            },},{id: "books-the-three-body-problem",
+          title: 'The Three-Body Problem',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_Three_Body_Problem/";
+            },},{id: "books-the-moon-is-a-harsh-mistress",
+          title: 'The Moon is a Harsh Mistress',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_moon_is_a_harsh_mistress/";
+            },},{id: "books-the-player-of-games",
+          title: 'The Player of Games',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/The_player_of_games/";
+            },},{id: "books-we-are-legion-we-are-bob-bobiverse",
+          title: 'We Are Legion (We are Bob, Bobiverse)',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/We_Are_Legion/";
+            },},{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
