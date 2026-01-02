@@ -7,10 +7,11 @@ first_name: Ari
 middle_name: 
 last_name: Cholakian
 contact_note: >
-  I am best reached through email!
+  Phone: +1 (778) 829-4303. I am best reached through email!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Ari Cholakian's engineering portfolio.
 footer_text: >
+  The content of this site and its backend were created without the use of generative AI.
 
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
