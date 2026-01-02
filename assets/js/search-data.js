@@ -275,7 +275,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/example_pdf.pdf", "_blank");
+          window.open("https://github.com/AriCholakian/resume/releases/latest/download/resume.pdf", "_blank");
         },
       },{
       id: 'light-theme',
