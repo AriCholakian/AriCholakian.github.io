@@ -1,12 +1,14 @@
 ---
 layout: page
-title: Autonomous Rescue Robot
+title: Autonomous Rescue Robot (1st Place)
 description: The Infamous Robot Summer!
 img: assets/img/proj1/cover.png
 importance: 1
 category: Highlights
 related_publications: false
 ---
+
+For the CTV Morning Live interview, scroll to the bottom or click [here](https://www.ctvnews.ca/vancouver/video/2025/08/13/students-compete-in-robotics-competition/)
 
 ## Key Ideas
 **Onshape CAD, shafts, DC motors, servos, 3DOF robot arm, LIDAR, 4-bar linkage, inverse kinematics, 3D Printing with PLA, PETG, TPU, springs, machining, waterjet, sand-blasting, fasteners, aluminum manufacturing, thread cutting, informal drawings, laser cutting, thread lock, modular design**

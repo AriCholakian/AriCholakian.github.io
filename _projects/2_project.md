@@ -1,81 +1,46 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Antenna Deployer Module
+description: ALEASAT
+img: assets/img/proj2/img2.jpg
 importance: 2
-category: work
-giscus_comments: true
+category: In Progress
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Key Ideas
+**Onshape CAD, Space Mechanisms, PEEK, DFMA, Electromagnetic Compatibility, Altium and Circuit Design, Timers, Testing, Ansys EM, Ansys Mechanical, Material Analysis**
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+## Project
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+I was first introduced to this project in first year, where I had joined the design team as a member in the COMMS subsystem of the ALEASAT project / UBC Orbit. One of my very first tasks on the team was to confirme the functionality of the (then) newly designed Antenna Deployer Board (ADB) and modify it to accomodate some quality of life features.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/proj2/img2.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    The Antenna Deployer Module (ADM)
 </div>
+
+The Antenna Deployer Module (ADM) is the very top part of the 1U ALEASAT Cubesat, where many critical system components are housed, such as the ADB, 437MHz UHF antenna system, the GNSS antenna, as well as some miscellanious sensing boards. The core objective of the ADM, outside of housing some satellite components, is to deploy the UHF antennas out of the satellite body 45 minutes after the satellite is launched and released from its pod in the 2nd stage of the launch system. There is a strong requirement for the deployment to happen this long later to allow for the satellite to clear its surroundings and ensure it is not near any other spacecraft before it deploys. 
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/proj2/img1.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    The Antenna Deployer Module (ADM)
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+After taking more of a leadership role in the COMMS team to become lead alongside the current lead, Eisha, I became captain but continued working under the Structure team. In a nice, full-circle way, I am now working on the mechanical deployment abd structural aspect of the V2 of the ADM, to improve on some fundemental mechanical shortcomings of the previous design. We are preparing to manufacture my design in the coming spring, and we will be taking it to Belgium to be thermal and vibration qualified (like its predecessor) in a two week test at ESA's Cubesat testing facilities in the summer. 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/proj2/img3.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The original ADM being prepared to be qualified in Fall 2024.
 </div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
