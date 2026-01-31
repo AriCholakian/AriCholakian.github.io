@@ -192,19 +192,19 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/We_Are_Legion/";
-            },},{id: "books-the-godfather",
-          title: 'The Godfather',
+            },},{id: "books-the-pride-of-chanur",
+          title: 'The Pride of Chanur',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "projects-autonomous-rescue-robot",
-          title: 'Autonomous Rescue Robot',
+              window.location.href = "/books/ZThe_Pride_of_Chanur/";
+            },},{id: "projects-autonomous-rescue-robot-1st-place",
+          title: 'Autonomous Rescue Robot (1st Place)',
           description: "The Infamous Robot Summer!",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-antenna-deployer-module",
+          title: 'Antenna Deployer Module',
+          description: "ALEASAT",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
