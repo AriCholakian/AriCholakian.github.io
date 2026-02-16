@@ -7,7 +7,7 @@ email: ari.cholakian@gmail.com # your email address
 linkedin_username: ari-mesrob-cholakian # your LinkedIn user name
 github_username: AriCholakian # your GitHub user name
 work_url: https://engphys.ubc.ca # work page URL
-cv_pdf: https://github.com/AriCholakian/resume/releases/latest/download/resume.pdf # path to your CV PDF file
+cv_pdf: https://cdn.jsdelivr.net/gh/AriCholakian/resume@master/imprecv/resume_AriCholakian.pdf # path to your CV PDF file
 
 # academia_edu:  your organization and your username Ex. https://organization.academia.edu/UserName
 #  organization: princeton # your organization as appears in the subdomain

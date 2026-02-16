@@ -34,4 +34,4 @@ The *[UBC Engineering Physics](https://www.engphys.ubc.ca/)* ("ENPH" or "Eng Fiz
 I have a strong passion for anything that moves: robots, fluids, spacecraft, and everything in between. I believe this makes me a mechanical engineer! To gain expertise in this area, I have taken and will continue taking courses in **thermodynamics, heat transfer, materials, fluid dynamics, control systems, and propulsion.** outside of the topics mentioned above
 
 ### **My Industry:**
- I love working on **spacecraft and launch systems**, in whatever way my skills permit!
+ I love working on **spacecraft and launch systems**, through any discipline of engineering.

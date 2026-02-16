@@ -1,80 +1,44 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: GenQ Hackathon - Switzerland
+description: Calgary and Switzerland!
+img: assets/img/proj4/img1.jpg
 importance: 3
-category: fun
+category: Highlights
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Key Ideas
+**Quantum Mechanics, Computring, and Algorithms, Python, Q#, Qiskit, QUBO, Pulser Studio, Protien Folding**
+<br> 
+*Yes, unfortunately everything in this field has a Q in it...*
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Switzerland - Hackathon 2
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+With the amount of fun we had in the first year of the GenQ series (you can read about it [here](https://aricholakian.github.io/projects/3_project/)), we were really excited to hear that QAI ventures was continuing the series, bigger than ever! 
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The 2025 GenQ hackathon had expanded to multiple locations across the world, based on the field of study. In the fall, Calgary was hosting *energy*, Switzerland was hosting *biology/medicine*, and Singapore was hosting *finance*. When the team from the previous year heard that the Switzerland hackathon was happening on the **CERN** campus, we couldn't resist organizing a trip within the Engineering Physics third year cohort. With the help of our department, the university's Professional Activities Fund, and the generous folks at QAI Ventures, we put aside a weekend in the middle of the fall semester to visit CERN and compete in the hackathon.
+
+To build on our learning from the previous year, we chose a challenge solvable through **Quadratic Unconstrained Binary Optimazation (QUBO)**. With the theme being biology and medicine, the QUBO challenge that my team chose was related to **protien folding**. Without going into too much detail here (you can read about RNA folding [here](https://www.math.clemson.edu/~macaule/classes/f16_math4500/slides/f16_math4500_rna-basics_handout.pdf)), the process of folding an entire RNA chain is a "guess-and-check" combanitorics problem that is slow to solve classically, but much easier to solve through quantum algorithms, like QAOA or VRE.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/proj4/img1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    An example of what a specific RNA folding can look like
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+We implemented a solution to transcribe the protein sequences into sparse **Pauli Z matrices**, and used them as an input to qiskit algorithm library's built-in Quantum Approximate Optimization Algorithm (QAOA). In the classical sense, qiskit solves this problem through gradient descent. In a quantum computer, this would be implemented physically through a phase-flip gate (Pauli Z gate) and would skip the combinatoric computational complexity of the problem. Of course, we could have arrived at solution by implementing a quantum annealer once more, but given that we didn't have access to a real physical quantum annealer, we chose instead to take advantage of the High Performance Computing access we were provided. 
 
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/proj4/img3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm-6 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/proj4/img4.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
 
-{% endraw %}
+Not only did our implementation win 2nd place overall (out of 15 teams), we spent a relaxing day exploring CERN and Geneva as a reward the day after!

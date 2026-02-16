@@ -1,81 +1,42 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
+title: GenQ Hackathon - Calgary
+description: Calgary and Switzerland!
+img: assets/img/proj3/img1.jpg
 importance: 3
-category: work
+category: Highlights
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Key Ideas
+**Quantum Mechanics, Computring, and Algorithms, Python, Q#, Qiskit, QUBO, Pulser Studio**
+<br> 
+*Yes, unfortunately everything in this field has a Q in it...*
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## Calgary - Hackathon 1
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+In the fall of 2024, a small group of my peers and I flew out to Calgary for a weekend to participate in the first ever QAI Ventures hosted hackathon, the GenQ Quantum Hackathon. Hosted in Calgary, and sponsered by the City of Calgary, University of Calgary Institute for Quantum Science and Technology, and the Swiss government. The winner of the weekend had the chance to earn an investment from QAI Ventures, for a startup implementing their prototype.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+There were 4 different challenges, mostly Quandratic Unconstrained Binary Optimization problems, in different fields like finance and energy. For this hackathon, 6 of us formed a team to work on optimizing the placement of wind turbines in an offshore wind farm. This is a challenging problem due to the aerodynamics of wind tunnels: If turbines are placed in each others' vicinity, the upstream turbine creates a large wake that significantly harms the downstream turbine. 
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/proj3/img1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    An example of wakes created in a simulated wind farm - Credit: UC San Diego
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+The placement of wind turbines, especially given dynamic and inhomogenous wind conditions, becomes one of trying to guess-and-check; in other words, **NP Hard**. This can be mapped to a generic **QUBO** problem, which can be solved through classical algorithms (with guess-and-check, polynomial time complexity), but it can solved much faster through quantum algorithms (exp(sqrt(n)) time complexity). Moreover, with some more involved processing, this problem can be solved through **quantum annealing**. Given all this, our team focused on writing the pre/post-processing python scripts as quickly as possible, and experimenting with the **quantum annealer** graciously made available to by Pasqal. Pulser Studio allowed us to simulate, in real time, up to 6 qubits, or submit to a HPC server the simulation of up to 20 qubits. The classical algorithms slowed rather quickly, but it was seamless to submit the jobs to a real Quantum Annealer with **140 qubits**!
 
-{% raw %}
-
-```html
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    <div class="col-sm-10 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/proj3/img2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    An example of the Pulser Studio interface. To this day, we can run local annealing simulations!
+</div>
 
-{% endraw %}
+Our solution involved both the base implementation of the challenge, which was to find the most efficient placement of turbines in a discretized grid with homogenous, one-directional wind. To take it above and beyond, and demonstrate entrepreneurship mindset, we iterated on our solution further. The final solution was able to take in real historical wind data such as direction, intensity, and frequency, and place turbines as efficiently as possible given that the data is representative. Overall, we came 3rd place (out of 7) in our category, and had a strong fresh introduction to quantum computing!
