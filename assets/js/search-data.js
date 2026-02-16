@@ -207,14 +207,14 @@ ninja.data = [{
           description: "ALEASAT",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-genq-hackathon-calgary",
+          title: 'GenQ Hackathon - Calgary',
+          description: "Calgary and Switzerland!",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-genq-hackathon-switzerland",
+          title: 'GenQ Hackathon - Switzerland',
+          description: "Calgary and Switzerland!",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
@@ -275,7 +275,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("https://github.com/AriCholakian/resume/releases/latest/download/resume.pdf", "_blank");
+          window.open("https://cdn.jsdelivr.net/gh/AriCholakian/resume@master/imprecv/resume_AriCholakian.pdf", "_blank");
         },
       },{
       id: 'light-theme',
