@@ -26,6 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
+*You can read my resume [here](https://cdn.jsdelivr.net/gh/AriCholakian/resume@master/imprecv/resume_AriCholakian.pdf), or at the bottom of this page.*
+
 ### **My Program:** 
 
 The *[UBC Engineering Physics](https://www.engphys.ubc.ca/)* ("ENPH" or "Eng Fizz") program is a multidisciplinary engineering program that offers courses in **mechanical, electrical, and software engineering,** with a strong focus on **fundemental math and physics**. Math and physics classes provide a strong foundation to be able to **solve any engineering problem**, whether in robotics or in aerospace. Beyond the  breadth of topics covered, Engineering Physics allows for specialization through electives and its Capstone program.
